@@ -1,0 +1,75 @@
+*{
+    color: rgb(255, 255, 255);
+    background-color: rgb(170, 170, 127);
+}
+QToolTip
+{
+    color: rgb(255, 255, 255);
+    background-color: rgb(170, 170, 127);
+}
+
+#qwin, #propertyTb
+{
+    color: rgb(255, 255, 255);
+    background-color: rgb(70, 0, 0);
+}
+
+QPushButton:disabled
+{
+    color: rgb(100, 100, 100);
+}
+QToolButton,QPushButton
+{
+    border-radius: 6px;
+    border: 4px;
+}
+QToolButton:hover, QPushButton:hover
+{
+    background-color:rgba(180, 200, 110, 255);
+    color: rgb(239, 239, 119);
+    border-color: rgb(255, 255, 255);
+    border-radius: 6px;
+    border: 4px;
+}
+QToolButton:pressed,QPushButton:pressed
+{
+    background: rgba(235, 235, 110, 255);
+        color: rgb(111, 111, 55);
+}
+
+QToolBox::tab
+{
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(160, 160, 100, 255), stop:1 rgba(255, 255, 255, 200));
+    border-radius: 5px;
+    color: white;
+}
+QToolBox::tab:selected
+{
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(180, 200, 110, 255), stop:1 rgba(255, 255, 255, 255));
+    font: italic;
+        color: rgb(239, 239, 119);
+}
+
+QTableWidget:item:selected
+{
+    background-color: rgba(0, 255, 0, 255);
+}
+
+QToolButton[popupMode="1"]
+{
+     padding-right:14px;
+}
+QMenu::item:selected
+{
+    background-color:rgba(180, 200, 110, 255);
+}
+QMenu::item:disabled
+{
+    color: rgb(100, 100, 100);
+}
+
+QLineEdit:enabled
+{
+    background-color: rgba(255, 255, 255, 255);
+    color: rgb(0, 0, 0);
+}

@@ -1,0 +1,33 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/ImportExport.png</file>
+        <file>images/Material.png</file>
+        <file>images/ObjectEdit.png</file>
+        <file>images/Other.png</file>
+        <file>images/Rename.png</file>
+        <file>images/SceneCheck.png</file>
+        <file>images/Faverit.png</file>
+        <file>default.qss</file>
+        <file>images/folder_open_add.png</file>
+        <file>images/pushpin_azure.png</file>
+        <file>images/pushpin_left_azure.png</file>
+        <file>images/pushpin_right_azure.png</file>
+        <file>images/dock_left.png</file>
+        <file>images/dock_right.png</file>
+        <file>images/script_add.png</file>
+        <file>images/script_property.png</file>
+        <file>images/script_remove.png</file>
+        <file>scriptswin_zh_CN.qm</file>
+        <file>qt_zh_CN.qm</file>
+        <file>images/script_move.png</file>
+        <file>qss/black.qss</file>
+        <file>qss/blue.qss</file>
+        <file>qss/gray.qss</file>
+        <file>qss/green.qss</file>
+        <file>qss/yellow.qss</file>
+        <file>qss/pink.qss</file>
+        <file>images/Custom.png</file>
+        <file>images/category_add.png</file>
+        <file>images/category_del.png</file>
+    </qresource>
+</RCC>

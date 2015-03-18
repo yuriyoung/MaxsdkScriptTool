@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ScriptsWidget</class>
+ <widget class="QWidget" name="ScriptsWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>200</width>
+    <height>651</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Scripts Widget</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>4</number>
+     </property>
+     <property name="rightMargin">
+      <number>4</number>
+     </property>
+     <item>
+      <widget class="QToolButton" name="addScriptBtn">
+       <property name="maximumSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Batch add script files&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="icon">
+        <iconset resource="res.qrc">
+         <normaloff>:/images/folder_open_add.png</normaloff>:/images/folder_open_add.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="blackLb">
+       <property name="minimumSize">
+        <size>
+         <width>16</width>
+         <height>16</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16</width>
+         <height>16</height>
+        </size>
+       </property>
+       <property name="mouseTracking">
+        <bool>true</bool>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::ClickFocus</enum>
+       </property>
+       <property name="contextMenuPolicy">
+        <enum>Qt::NoContextMenu</enum>
+       </property>
+       <property name="toolTip">
+        <string>Change current theme color.</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">*{
+	background-color: rgb(25, 25, 25);
+}
+:hover
+{
+	border:2px solid rgb(255, 255, 255);
+}
+:selected
+{
+	background-color: rgb(255, 255, 255);
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::WinPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="grayLb">
+       <property name="minimumSize">
+        <size>
+         <width>16</width>
+         <height>16</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16</width>
+         <height>16</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Change current theme color.</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">*{
+	background-color: rgb(213, 213, 213);
+}
+:hover
+{
+	border:2px solid rgb(255, 255, 255);
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="blueLb">
+       <property name="minimumSize">
+        <size>
+         <width>16</width>
+         <height>16</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16</width>
+         <height>16</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Change current theme color.</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">*{
+	background-color: rgb(0, 107, 156);
+}
+:hover
+{
+	border:2px solid rgb(255, 255, 255);
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="greenLb">
+       <property name="minimumSize">
+        <size>
+         <width>16</width>
+         <height>16</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16</width>
+         <height>16</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Change current theme color.</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">*{
+	background-color: rgb(0, 170, 127);
+}
+:hover
+{
+	border:2px solid rgb(255, 255, 255);
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="pinkLb">
+       <property name="minimumSize">
+        <size>
+         <width>16</width>
+         <height>16</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16</width>
+         <height>16</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Change current theme color.</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">*{
+	background-color: rgb(180, 90, 147);
+}
+:hover
+{
+	border:2px solid rgb(255, 255, 255);
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="redLb">
+       <property name="minimumSize">
+        <size>
+         <width>16</width>
+         <height>16</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16</width>
+         <height>16</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Change current theme color.</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">*{
+	
+	background-color: rgb(170, 170, 127);
+}
+:hover
+{
+	border:2px solid rgb(255, 255, 255);
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QToolButton" name="dockBtn">
+       <property name="maximumSize">
+        <size>
+         <width>30</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Dock/Float&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="res.qrc">
+         <normaloff>:/images/pushpin_azure.png</normaloff>:/images/pushpin_azure.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="popupMode">
+        <enum>QToolButton::MenuButtonPopup</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <widget class="QToolBox" name="toolBox">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="page0">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>200</width>
+        <height>594</height>
+       </rect>
+      </property>
+      <attribute name="label">
+       <string>temp</string>
+      </attribute>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

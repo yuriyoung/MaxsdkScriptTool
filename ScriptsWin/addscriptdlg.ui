@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddScriptDlg</class>
+ <widget class="QDialog" name="AddScriptDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>486</width>
+    <height>499</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Add Script File</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3">
+   <property name="sizeConstraint">
+    <enum>QLayout::SetFixedSize</enum>
+   </property>
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="openBtn">
+       <property name="text">
+        <string>Add...</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="dirEdt"/>
+     </item>
+    </layout>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="helpeLabel">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;批量添加脚本插件说明:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;1.&lt;/span&gt;单击&amp;quot;&lt;span style=&quot; font-weight:600;&quot;&gt;Add&lt;/span&gt;&amp;quot;按钮,弹出选择脚本文件对话框，选择&lt;span style=&quot; font-weight:600;&quot;&gt;ms/mse&lt;/span&gt;格式的脚本文件&lt;span style=&quot; font-weight:600;&quot;&gt;一个&lt;/span&gt;或&lt;span style=&quot; font-weight:600;&quot;&gt;多个&lt;/span&gt;，确定选择的文件，脚本文件被添加到&amp;quot;&lt;span style=&quot; font-weight:600;&quot;&gt;Scripts Name&lt;/span&gt;&amp;quot;列表中。&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;2.&lt;/span&gt;从左边文件列表栏中选择一个脚本文件，然后在右边的属性中修改或填写描述信息，其中&amp;quot;Size&amp;quot;、 &amp;quot;Type&amp;quot;、 &amp;quot;Date&amp;quot;三个选项默认为文件属性，不需要修改或填写。&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;3.&lt;/span&gt;&amp;quot;&lt;span style=&quot; font-weight:600;&quot;&gt;Category&lt;/span&gt;&amp;quot;为当前脚本文件的分类，从&lt;span style=&quot; font-weight:600;&quot;&gt;下拉框&lt;/span&gt;中选择你想要添加到的&lt;span style=&quot; font-weight:600;&quot;&gt;分类&lt;/span&gt;；&amp;quot;&lt;span style=&quot; font-weight:600;&quot;&gt;Version&lt;/span&gt;&amp;quot;为脚本的版本号，你可以自己为自己的脚本命名一个版本号；&amp;quot;&lt;span style=&quot; font-weight:600;&quot;&gt;Remark&lt;/span&gt;&amp;quot;为脚本的备注信息，通常可以填写关于脚本的使用方法或功能描述。&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;4.&lt;/span&gt;强烈推荐填写完整&amp;quot;&lt;span style=&quot; font-weight:600;&quot;&gt;Remark&lt;/span&gt;&amp;quot;备注信息，即对脚本的使用帮助加以描述，以便在使用脚本时清楚每一个脚本的功能，以免造成错误的运行脚本。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QToolButton" name="helpBtn">
+       <property name="text">
+        <string>?</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDialogButtonBox" name="buttonBox">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="standardButtons">
+        <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="applyBtn">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>Apply</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="2" column="1">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>Type:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QLineEdit" name="typeEdt">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="2">
+      <widget class="QLineEdit" name="versionEdt">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>1.0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Size:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>Date:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="2" rowspan="3">
+      <widget class="QPlainTextEdit" name="remarkEdt">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+       </property>
+       <property name="plainText">
+        <string>Descriptive information about the script file.
+e.g.:how to use or what to work for...</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QComboBox" name="categoryCombox">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Category:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0" rowspan="8">
+      <widget class="QTreeWidget" name="scriptsTreeWidget">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="editTriggers">
+        <set>QAbstractItemView::NoEditTriggers</set>
+       </property>
+       <property name="alternatingRowColors">
+        <bool>false</bool>
+       </property>
+       <property name="selectionMode">
+        <enum>QAbstractItemView::ExtendedSelection</enum>
+       </property>
+       <property name="rootIsDecorated">
+        <bool>false</bool>
+       </property>
+       <property name="itemsExpandable">
+        <bool>false</bool>
+       </property>
+       <property name="expandsOnDoubleClick">
+        <bool>false</bool>
+       </property>
+       <attribute name="headerDefaultSectionSize">
+        <number>20</number>
+       </attribute>
+       <attribute name="headerStretchLastSection">
+        <bool>true</bool>
+       </attribute>
+       <column>
+        <property name="text">
+         <string>#</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Scripts Name</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QLineEdit" name="sizeEdt">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>Version:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QLineEdit" name="dateEdt">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1" rowspan="2">
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>Remark:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>AddScriptDlg</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>200</x>
+     <y>278</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>AddScriptDlg</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>200</x>
+     <y>278</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>helpBtn</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>helpeLabel</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>27</x>
+     <y>263</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>23</x>
+     <y>293</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
